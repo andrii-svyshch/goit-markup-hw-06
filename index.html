@@ -547,7 +547,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="subs">
           <form class="subs-form">
             <label>
               <span class="join-us-text">Подпишитесь на рассылку</span>
@@ -572,6 +572,11 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <button class="modal-btn-close" data-modal-close>
+          <svg class="close-icons-svg" width="11" height="11">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
         <form class="modal-form">
           <div class="form-field">
             <label class="form-label">
@@ -631,9 +636,7 @@
               name="user-checkbox"
               class="checkbox visually-hidden"
             />
-            <svg class="checkbox-icon" width="16" height="15">
-              <use href="./images/icons.svg#icon-checked"></use>
-            </svg>
+            <span class="checkbox-icon"></span>
             <span class="checkbox-label-text">
               Соглашаюсь с рассылкой и принимаю
             </span>
@@ -643,11 +646,6 @@
             Отправить
           </button>
         </form>
-        <button class="modal-btn-close" data-modal-close>
-          <svg class="close-icons-svg" width="11" height="11">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
